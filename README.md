@@ -1,76 +1,46 @@
-#[9leg.com](http://9leg.com/)
+# Jekyll-Bootstrap
 
+The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages
 
-###请使用自己申请的网站统计Id，评论Id等
+## Usage
 
-如今网络是开源的年代，茫茫多的框架。
+For all usage and documentation please see: <http://jekyllbootstrap.com>
 
-既然我的博客放在gitHub上，也表示了开源，希望有更多的人来使用Jekyll模版。
+## Version
 
-但发现很多人Fork我的项目后，并不根据自己情况修改任何配置，而是直接写post了。
+0.3.0 - stable and versioned using [semantic versioning](http://semver.org/).
 
-这导致我的网站统计和评论带来了不必要的麻烦，简单的说就是，你网站中的评论被我管理，这不是你想要看到的吧。
+**NOTE:** 0.3.0 introduces a new theme which is not backwards compatible in the sense it won't _look_ like the old version.
+However, the actual API has not changed at all.
+You might want to run 0.3.0 in a branch to make sure you are ok with the theme design changes.
 
-访问你网站的流量PV和UV等，算在我的统计范围内，这也不是你想要看到的吧(其实我很乐意的...)。
+## Contributing 
 
-那么就简单的说下，如何个性化自定义配置网站。
+This repository tracks 2 projects:
 
-**_config.yml**,网站的许多配置都在这个文件中，导航栏信息配置，网站作者信息配置，友链配置，评论和网站统计等。
-
-下面是我的配置：
-
-```
-googleAnaly:
-
-  config: false
-
-  id: Your-id-is-here
-```
-
-```
-baiduTongji:
-	
-  	config: true
-  	
-  	id: Your-id-is-here
-```
-
-```
-disqus:
-
-  config: false
+- **Jekyll-Bootstrap Framework.**  
+  The framework for which users should clone and build their blog on top of is available in the master branch.
   
-  id: Your-id-is-here
-```
-
-```
-duoshuo:
-
-  config: true
+  To contribute to the framework please make sure to checkout your branch based on `jb-development`!!
+  This is very important as it allows me to accept your pull request without having to publish a public version release.
   
-  id: Your-id-is-here
-```
+  Small, atomic Features, bugs, etc.   
+  Use the `jb-development` branch but note it will likely change fast as pull requests are accepted.   
+  Please rebase as often as possible when working.   
+  Work on small, atomic features/bugs to avoid upstream commits affecting/breaking your development work.
+  
+  For Big Features or major API extensions/edits:   
+  This is the one case where I'll accept pull-requests based off the master branch.
+  This allows you to work in isolation but it means I'll have to manually merge your work into the next public release.
+  Translation : it might take a bit longer so please be patient! (but sincerely thank you).
+ 
+- **Jekyll-Bootstrap Documentation Website.**    
+  The documentation website at <http://jekyllbootstrap.com> is maintained in the gh-pages branch.
+  Please fork and contribute documentation additions to this branch only.
 
-```
-baiduShare:
-
-  config: true
-```
-可以使用google分析和baidu统计对网站进行流量多方面的信息跟踪查看，在这里使用了baidu统计，**注意：请设置你申请的统计Id**。
-
-在这里不使用google分析的原因是加载ga.js时间过长或者根本无法请求，原因你懂的。
-
-disqus和duoshuo都是网站评论设置，使用了多说，国内还是比较好的，**注意：请设置你申请的多说Id**。
-
-baiduShare是baidu分享插件，比较实用。
-
-最后根据自己的实际情况，修改_layouts下的两个模版html文件，稍微有点html知识都可以看懂并修改。
+The master and gh-pages branch do not share the same ancestry. Please treat them as completely separate git repositories!
 
 
-##重复,请使用自己申请的网站统计Id，评论Id等。
+## License
 
-什么？怎么申请？google去...
-
-
-
-
+[MIT](http://opensource.org/licenses/MIT)
